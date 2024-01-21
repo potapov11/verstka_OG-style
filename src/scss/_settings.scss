@@ -80,8 +80,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  max-width: $container-width-desktop;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

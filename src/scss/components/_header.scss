@@ -1,0 +1,10 @@
+.header {
+    &__list {
+        list-style: none;
+    }
+
+		&__top-box, &__bottom-box, &__list, &__icons {
+			display: flex;
+			align-items: center;
+		}
+}
