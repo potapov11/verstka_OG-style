@@ -1,7 +1,8 @@
 // базовые подключения
 @import "vars";
+@import '_help.scss';
 @import "mixins";
-@import "fonts";
+@import "_fonts.scss";
 @import "settings";
 
 // подключения компонентов страницы

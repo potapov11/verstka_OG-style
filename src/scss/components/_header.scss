@@ -1,10 +1,85 @@
 .header {
+	padding-top: 25px;
+
     &__list {
         list-style: none;
     }
 
 		&__top-box, &__bottom-box, &__list, &__icons {
+			@include flex-v-center;
+		}
+
+		&__logo-box {
+			margin-right: 50px;
+		}
+
+		&__item {
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__nav {
+			margin-right: 250px;
+		}
+
+		&__watsap, &__tg {
+			@include flex-all-center;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			border: 1px solid $dark;
+		}
+
+		&__watsap-link, &__tg-link {
+			@include flex-all-center
+		}
+
+		// &__link {
+		// 	font-family: 'Inter', sans-serif;
+		// }
+
+		&__watsap {
+			margin-right: 15px;
+		}
+
+		&__tg {
+			padding-right: 3px;
+		}
+
+		&__icons {
+			margin-right: 30px;
+		}
+
+		&__mail {
 			display: flex;
-			align-items: center;
+			margin-right: 30px;
+
+			&::after {
+				content: '';
+				@include flex-all-center;
+				margin-left: 5px;
+				width: 20px;
+				height: 20px;
+				background-image: url('../../img/arrow-down.png');
+				cursor: pointer;
+			}
+		}
+
+		&__telephone {
+			display: flex;
+			align-items: end;
+
+			&::after {
+				content: '';
+				@include flex-all-center;
+				margin-left: 5px;
+				width: 20px;
+				height: 20px;
+				background-image: url('../../img/arrow-down.png');
+				cursor: pointer;
+			}
 		}
 }
