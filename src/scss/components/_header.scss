@@ -1,85 +1,127 @@
 .header {
-	padding-top: 25px;
+  padding-top: 25px;
 
-    &__list {
-        list-style: none;
+  &__list {
+    list-style: none;
+  }
+
+  &__top-box,
+  &__bottom-box,
+  &__list,
+  &__icons {
+    @include flex-v-center;
+  }
+
+  &__top-box,
+  &__bottom-box {
+    justify-content: space-between;
+  }
+
+  &__bottom-box {
+    margin-bottom: 30px;
+  }
+
+  &__top-box {
+    margin-bottom: 25px;
+  }
+
+  &__logo-box {
+    margin-right: 50px;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
     }
+  }
 
-		&__top-box, &__bottom-box, &__list, &__icons {
-			@include flex-v-center;
-		}
+  &__nav {
+    flex: auto;
+  }
 
-		&__logo-box {
-			margin-right: 50px;
-		}
+  &__mail-text,
+  &__telephone-text {
+    color: $graydark;
+  }
 
-		&__item {
-			margin-right: 40px;
+  &__watsap,
+  &__tg {
+    @include flex-all-center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid $dark;
+  }
 
-			&:last-child {
-				margin-right: 0;
-			}
-		}
+  &__watsap-link,
+  &__tg-link {
+    @include flex-all-center;
+  }
 
-		&__nav {
-			margin-right: 250px;
-		}
+  &__link {
+    font-size: 16px;
+    color: $graydark;
+    line-height: 140%;
+  }
 
-		&__watsap, &__tg {
-			@include flex-all-center;
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			border: 1px solid $dark;
-		}
+  &__link--black {
+    color: $black;
+    font-weight: 600;
+  }
 
-		&__watsap-link, &__tg-link {
-			@include flex-all-center
-		}
+  &__watsap {
+    margin-right: 15px;
+  }
 
-		// &__link {
-		// 	font-family: 'Inter', sans-serif;
-		// }
+  &__tg {
+    padding-right: 3px;
+  }
 
-		&__watsap {
-			margin-right: 15px;
-		}
+  &__icons--top {
+    margin-right: 30px;
+  }
 
-		&__tg {
-			padding-right: 3px;
-		}
+  &__icons--bottom {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-		&__icons {
-			margin-right: 30px;
-		}
+  &__mail {
+    display: flex;
+    margin-right: 30px;
 
-		&__mail {
-			display: flex;
-			margin-right: 30px;
+    &::after {
+      content: "";
+      @include flex-all-center;
+      margin-left: 5px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/arrow-down.png");
+      cursor: pointer;
+    }
+  }
 
-			&::after {
-				content: '';
-				@include flex-all-center;
-				margin-left: 5px;
-				width: 20px;
-				height: 20px;
-				background-image: url('../../img/arrow-down.png');
-				cursor: pointer;
-			}
-		}
+  &__telephone {
+    display: flex;
+    align-items: end;
 
-		&__telephone {
-			display: flex;
-			align-items: end;
+    &::after {
+      content: "";
+      @include flex-all-center;
+      margin-left: 5px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/arrow-down.png");
+      cursor: pointer;
+    }
+  }
 
-			&::after {
-				content: '';
-				@include flex-all-center;
-				margin-left: 5px;
-				width: 20px;
-				height: 20px;
-				background-image: url('../../img/arrow-down.png');
-				cursor: pointer;
-			}
-		}
+  &__search,
+  &__hearth,
+  &__bug {
+    cursor: pointer;
+  }
 }

@@ -1,9 +1,10 @@
 // базовые подключения
 @import "vars";
-@import '_help.scss';
+@import "_help.scss";
 @import "mixins";
 @import "_fonts.scss";
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+@import "./components/_slider.scss";
+@import "./components/_header.scss";
