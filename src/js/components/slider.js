@@ -15,3 +15,14 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiperGoods = new Swiper(".slider-goods", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: ".slider-goods__arrow-left",
+    prevEl: ".slider-goods__arrow-right",
+  },
+});
