@@ -6,7 +6,7 @@ var swiper = new Swiper(".swiper-container", {
   loop: true,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".slider-bullets",
     clickable: true,
   },
 

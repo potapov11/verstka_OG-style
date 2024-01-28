@@ -5,68 +5,68 @@
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: 700px;
-}
-
-.swiper-lazy-preloader {
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -21px;
-  margin-top: -21px;
-  z-index: 1;
-  background-size: 42px 42px;
+  cursor: pointer;
 }
 
 /* добавляем стили для кнопок навигации */
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev--arrow-left,
+.swiper-button-next--arrow-right {
   position: absolute;
-  top: 50%;
+  top: 97% !important;
   width: 27px;
   height: 44px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  background-image: url("path/to/prev-button.png");
+  // background-image: url("../../img/goods-img/arrow-left.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.swiper-button-prev {
-  left: 10px;
+.swiper-button-next--arrow-right {
+  left: 57% !important;
+  background-image: url("../../img/icon-right.png");
 }
 
-.swiper-button-next {
-  right: 10px;
+.swiper-button-prev--arrow-left {
+  background-image: url("../../img/icon-left.png");
+  left: 47% !important;
+}
+
+// .swiper-button-prev {
+//   left: 10px;
+// }
+
+// .swiper-button-next {
+//   right: 10px;
+// }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
 }
 
 /* добавляем стили для пагинации */
-.swiper-pagination {
+.slider-bullets {
   position: absolute;
-  bottom: 10px;
-  left: 0;
+  z-index: 2;
+  bottom: 33px;
+  left: 50% !important;
   width: 100%;
-  text-align: center;
 }
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 14px !important;
+  height: 14px !important;
   border-radius: 100%;
+  border: 2px solid $white;
   display: inline-block;
-  background: #fff;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
-  background: #007aff;
+  background: #fff !important;
 }
 
 .slider-goods {
@@ -89,14 +89,14 @@
   }
 
   &__arrow-left {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     background-image: url("../../img/goods-img/arrow-left.png");
   }
 
   &__arrow-right {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     background-image: url("../../img/goods-img/arrow-right.png");
   }
 

@@ -1,0 +1,39 @@
+.goods-card {
+  &__name {
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__prices {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  &__price-actual {
+    margin-right: 12px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: $black;
+  }
+
+  &__price-old {
+    margin-right: 12px;
+    text-decoration: line-through;
+    color: $graydark;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__price-discount {
+    padding: 4px 8px;
+    background-color: $yellow_dark;
+    border-radius: 8px;
+  }
+}

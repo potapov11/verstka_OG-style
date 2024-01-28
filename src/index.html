@@ -6,31 +6,30 @@
     <div class="site-container">
       @include('partials/header.html')
       <main class="main">
+        <h1 class="hide">Сайт по продаже спортивных товаров</h1>
         <div class="container">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="../img/slide1.png" />
+                <img src="img/hero-slider/slide1.png" />
               </div>
               <div class="swiper-slide">
-                <img src="../img/slide1.png" />
+                <img src="img/hero-slider/slide2.png" />
               </div>
               <div class="swiper-slide">
-                <img src="../img/slide1.png" />
+                <img src="img/hero-slider/slide3.jpg" />
               </div>
               <div class="swiper-slide">
-                <img src="../img/slide1.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../img/slide1.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../img/slide1.png" />
+                <img src="img/hero-slider/slide4.jpg" />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="slider-bullets"></div>
+            <div
+              class="swiper-button-prev swiper-button-prev--arrow-left"
+            ></div>
+            <div
+              class="swiper-button-next swiper-button-next--arrow-right"
+            ></div>
           </div>
 
           <div class="firms-icons firms-icons--margin-bottom">
@@ -69,7 +68,7 @@
           <div class="slider-goods">
             <!-- Additional required wrapper -->
             <div class="slider-goods__top-block">
-              <p class="slider-goods__text">Популярные</p>
+              <h2 class="slider-goods__text">Популярные</h2>
               <div class="slider-goods__arrows">
                 <div class="swiper-button-prev slider-goods__arrow-left"></div>
                 <div class="swiper-button-next slider-goods__arrow-right"></div>
@@ -107,7 +106,7 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">18%</span>
                   </div>
                 </div>
               </div>
@@ -124,7 +123,7 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">10%</span>
                   </div>
                 </div>
               </div>
@@ -141,7 +140,7 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">16%</span>
                   </div>
                 </div>
               </div>
@@ -175,7 +174,7 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">18%</span>
                   </div>
                 </div>
               </div>
@@ -192,7 +191,7 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">10%</span>
                   </div>
                 </div>
               </div>
@@ -209,57 +208,48 @@
                   <div class="goods-card__prices">
                     <span class="goods-card__price-actual">9 000 ₽</span>
                     <span class="goods-card__price-old">9 000 ₽</span>
-                    <span class="goods-card__price-discount">32%</span>
+                    <span class="goods-card__price-discount">16%</span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- <div class="goods-card">
-              <div class="goods-card__img-box">
-                <img
-                  class="goods-card__img"
-                  src="img/goods-img/nike-vars-boot.png"
-                  alt=""
-                />
+          <div class="banner banner--top">
+            <p class="banner__text">
+              Совершая покупки в OGstyle,
+              <span class="banner__text--strong"
+                >вы приобретаете<br />
+                оригинальный и сертифицированный товар </span
+              >. Вся продукция<br />
+              промаркирована в соответствии с законодательством и<br />
+              может быть идентифицирована в системе Честный ЗНАК.
+            </p>
+          </div>
+
+          <div class="sale">
+            <h2 class="sale__title sale--top">Распродажа одежды и обуви</h2>
+            <div class="sale__layout">
+              <div class="sale__left--box">
+                <a href="#">
+                  <div class="sale__boot"></div>
+                </a>
+                <div class="sale__del"></div>
               </div>
-              <span class="goods-card__name"> Nike Defy All Day </span>
-              <div class="goods-card__prices">
-                <span class="goods-card__price-actual">9 000 ₽</span>
-                <span class="goods-card__price-old">9 000 ₽</span>
-                <span class="goods-card__price-discount">32%</span>
+              <div class="sale__right--box">
+                <div class="sale__top-box">
+                  <a href="#">
+                    <div class="sale__pants"></div>
+                  </a>
+                  <a href="#">
+                    <div class="sale__t-shirts"></div>
+                  </a>
+                </div>
+                <a href="#">
+                  <div class="sale__hoodies"></div>
+                </a>
               </div>
             </div>
-            <div class="goods-card">
-              <div class="goods-card__img-box">
-                <img
-                  class="goods-card__img"
-                  src="img/goods-img/nike-vars-boot.png"
-                  alt=""
-                />
-              </div>
-              <span class="goods-card__name"> Nike Defy All Day </span>
-              <div class="goods-card__prices">
-                <span class="goods-card__price-actual">9 000 ₽</span>
-                <span class="goods-card__price-old">9 000 ₽</span>
-                <span class="goods-card__price-discount">32%</span>
-              </div>
-            </div>
-            <div class="goods-card">
-              <div class="goods-card__img-box">
-                <img
-                  class="goods-card__img"
-                  src="img/goods-img/nike-vars-boot.png"
-                  alt=""
-                />
-              </div>
-              <span class="goods-card__name"> Nike Defy All Day </span>
-              <div class="goods-card__prices">
-                <span class="goods-card__price-actual">9 000 ₽</span>
-                <span class="goods-card__price-old">9 000 ₽</span>
-                <span class="goods-card__price-discount">32%</span>
-              </div>
-            </div> -->
           </div>
         </div>
       </main>

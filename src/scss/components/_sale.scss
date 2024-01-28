@@ -1,0 +1,62 @@
+.sale {
+  margin-top: 160px;
+
+  &__title {
+    color: $black;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 110%; /* 44px */
+    letter-spacing: 0.4px;
+  }
+
+  &__layout {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__left--box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__boot {
+    height: 450px;
+    background-image: url("../../img/sale-img/boot.png");
+  }
+
+  &__del {
+    height: 320px;
+    background-image: url("../../img/sale-img//del.png");
+  }
+
+  &__top-box {
+    display: flex;
+    column-gap: 20px;
+    height: 320px;
+
+    a {
+      width: 50%;
+    }
+  }
+
+  &__pants {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/sale-img/pantal.png");
+  }
+
+  &__t-shirts {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/sale-img/t-shirt.png");
+  }
+
+  &__hoodies {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background-image: url("../../img/sale-img/hoodies.png");
+  }
+}
