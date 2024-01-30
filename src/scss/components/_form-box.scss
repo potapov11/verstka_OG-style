@@ -1,0 +1,33 @@
+.form-box {
+  padding: 0.1px;
+  height: 485px;
+  background-image: url("../../img/form-bckg.png");
+  font-style: normal;
+  line-height: 110%; /* 19.8px */
+
+  &__center--margin-top {
+    margin-top: 100px;
+  }
+
+  &__center {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    color: $white;
+  }
+
+  &__title--mb {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    color: $white;
+  }
+}

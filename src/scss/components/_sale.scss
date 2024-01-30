@@ -1,6 +1,10 @@
 .sale {
   margin-top: 160px;
 
+  &--margin-bottom {
+    margin-bottom: 160px;
+  }
+
   &__title {
     color: $black;
     font-size: 40px;
@@ -58,5 +62,84 @@
     height: 100%;
     margin-top: 20px;
     background-image: url("../../img/sale-img/hoodies.png");
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    color: $black;
+    font-style: normal;
+
+    p {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    span {
+      position: absolute;
+      bottom: 20px;
+      left: 25px;
+      display: inline-flex;
+      padding: 8px 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+
+  &__link--hoody {
+    height: 57%;
+  }
+
+  &__del {
+    @include flex-v-center;
+    padding: 32px 20px 67px;
+  }
+
+  &__del-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: 0.32px;
+  }
+
+  &__del-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.16px;
+  }
+
+  &__del-title--margin-bottom {
+    margin-bottom: 12px;
+  }
+
+  &__del-btn {
+    padding: 12px 32px;
+    align-items: center;
+    border-radius: 12px;
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: 0.16px;
+  }
+
+  &__del-sub-title--margin-bottom {
+    margin-bottom: 32px;
+  }
+
+  &__price-text--top-position {
+    bottom: 0;
+    top: 370px;
+    height: max-content;
   }
 }
