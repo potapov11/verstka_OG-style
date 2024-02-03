@@ -1,4 +1,5 @@
 .form-box {
+  @include flex-h-center;
   padding: 0.1px;
   height: 485px;
   background-image: url("../../img/form-bckg.png");
@@ -10,6 +11,8 @@
   }
 
   &__center {
+    display: inline-block;
+    // max-width: 600px;
     text-align: center;
   }
 
@@ -29,5 +32,95 @@
     font-weight: 400;
     letter-spacing: 0.18px;
     color: $white;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &--margin-top {
+      margin-top: 40px;
+    }
+  }
+
+  &__email {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid $gray-white-white;
+    border-radius: 12px;
+    padding: 16px 0px 16px 24px;
+
+    &::placeholder {
+      color: $white;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subscribe {
+    padding: 16px 28px 16px 28px;
+    border-radius: 12px;
+    background: $white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1%;
+    color: $black;
+    cursor: pointer;
+  }
+
+  &__label {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $gray-white-white;
+
+    &--margin-top {
+      margin-top: 10px;
+    }
+  }
+
+  &__politic-box {
+    @include flex;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox + label {
+    position: relative;
+    padding-left: 30px;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: $gray-white-white;
+    opacity: 0.8;
+  }
+
+  &__checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    background-image: url("../../img/check-box.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+
+  &__checkbox:checked + label::before {
+    // border-color: #00b50e;
+    background-image: url("../../img/check-box-checked.png");
+    background-size: contain;
   }
 }
