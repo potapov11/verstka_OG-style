@@ -29,6 +29,8 @@
     height: 450px;
     background-image: url("../../img/sale-img/boot.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+
     transition: all 0.3s ease-in-out;
   }
 
@@ -36,6 +38,8 @@
     height: 320px;
     background-image: url("../../img/sale-img//del.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+
     transition: all 0.3s ease-in-out;
   }
 
@@ -63,6 +67,8 @@
     height: 100%;
     background-image: url("../../img/sale-img/t-shirt.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+
     transition: all 0.3s ease-in-out;
   }
 
@@ -72,6 +78,8 @@
     margin-top: 20px;
     background-image: url("../../img/sale-img/hoodies.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+
     transition: all 0.3s ease-in-out;
   }
 
