@@ -91,13 +91,27 @@
   &__arrow-left {
     width: 40px !important;
     height: 40px !important;
-    background-image: url("../../img/goods-img/arrow-left.png");
+    // background-image: url("../../img/goods-img/icon-left-svg.svg");
+  }
+
+  &__arrow-left:hover,
+  &__arrow-right:hover {
+    .goods-svg {
+      fill: $graydark;
+    }
+  }
+
+  &__arrow-left:active,
+  &__arrow-right:active {
+    .goods-svg {
+      fill: $red;
+    }
   }
 
   &__arrow-right {
     width: 40px !important;
     height: 40px !important;
-    background-image: url("../../img/goods-img/arrow-right.png");
+    // background-image: url("../../img/goods-img/icon-right-svg.svg");
   }
 
   &__arrows {

@@ -4,6 +4,7 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: auto,
   spaceBetween: 30,
   loop: true,
+  autoplay: true,
 
   pagination: {
     el: ".slider-bullets",
