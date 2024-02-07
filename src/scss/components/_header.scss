@@ -52,29 +52,29 @@
     border: 1px solid $dark;
   }
 
-  &__watsap-link,
-  &__tg-link {
-    @include flex-all-center;
-  }
+  // &__watsap-link,
+  // &__tg-link {
+  //   @include flex-all-center;
+  // }
 
-  &__link {
-    font-size: 16px;
-    color: $graydark;
-    line-height: 140%;
-  }
+  // &__link {
+  //   font-size: 16px;
+  //   color: $graydark;
+  //   line-height: 140%;
+  // }
 
-  &__link--black {
-    color: $black;
-    font-weight: 600;
-  }
+  // &__link--black {
+  //   color: $black;
+  //   font-weight: 600;
+  // }
 
-  &__watsap {
-    margin-right: 15px;
-  }
+  // &__watsap {
+  //   margin-right: 15px;
+  // }
 
-  &__tg {
-    padding-right: 3px;
-  }
+  // &__tg {
+  //   padding-right: 3px;
+  // }
 
   &__icons--top {
     margin-right: 30px;

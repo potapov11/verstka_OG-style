@@ -1,0 +1,28 @@
+.footer {
+  color: $dark;
+  line-height: 140%;
+  letter-spacing: 1%;
+
+  &__desc-text {
+    font-size: 16px;
+    font-weight: 400;
+
+    &--margin-bottom {
+      margin-bottom: 24px;
+    }
+  }
+
+  .footer__mail,
+  .footer__telephone {
+    &--margin-bottom {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__mail-link,
+  &__telephone-link {
+    color: $dark;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

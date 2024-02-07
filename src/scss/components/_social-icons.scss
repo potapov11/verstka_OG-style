@@ -1,0 +1,40 @@
+.social-icons {
+  display: flex;
+
+  &__watsap,
+  &__tg {
+    @include flex-all-center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid $dark;
+  }
+
+  &__watsap-link,
+  &__tg-link {
+    @include flex-all-center;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $graydark;
+    line-height: 140%;
+  }
+
+  &__link--black {
+    color: $black;
+    font-weight: 600;
+  }
+
+  &__watsap {
+    margin-right: 15px;
+  }
+
+  &__tg {
+    padding-right: 3px;
+  }
+
+  &--margin-right {
+    margin-right: 32px;
+  }
+}
