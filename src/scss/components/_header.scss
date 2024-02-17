@@ -3,6 +3,26 @@
 
   &__list {
     list-style: none;
+    margin-left: 10px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    color: $graydark;
+    transition: transform 0.3s ease;
+
+    &--black {
+      color: $black;
+      font-weight: 600;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+      opacity: 0.8;
+    }
   }
 
   &__top-box,
@@ -41,43 +61,6 @@
   &__mail-text,
   &__telephone-text {
     color: $graydark;
-  }
-
-  &__watsap,
-  &__tg {
-    @include flex-all-center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid $dark;
-  }
-
-  // &__watsap-link,
-  // &__tg-link {
-  //   @include flex-all-center;
-  // }
-
-  // &__link {
-  //   font-size: 16px;
-  //   color: $graydark;
-  //   line-height: 140%;
-  // }
-
-  // &__link--black {
-  //   color: $black;
-  //   font-weight: 600;
-  // }
-
-  // &__watsap {
-  //   margin-right: 15px;
-  // }
-
-  // &__tg {
-  //   padding-right: 3px;
-  // }
-
-  &__icons--top {
-    margin-right: 30px;
   }
 
   &__icons--bottom {
@@ -120,5 +103,16 @@
   &__hearth,
   &__bug {
     cursor: pointer;
+  }
+
+  &__search-icon,
+  &__hearth-icon,
+  &__bug-icon {
+    &:hover path {
+      stroke: $dark;
+    }
+    &:active path {
+      stroke: $red;
+    }
   }
 }
