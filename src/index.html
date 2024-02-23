@@ -13,7 +13,7 @@
       </div>
       @include('partials/header.html')
       <main class="main">
-        <h1 class="hide">Сайт по продаже спортивных товаров</h1>
+        <h1 class="hide title-hide">Сайт по продаже спортивных товаров</h1>
         <div class="container">
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -30,13 +30,15 @@
                 <img src="img/hero-slider/slide4.jpg" />
               </div>
             </div>
-            <div class="slider-bullets"></div>
-            <div
-              class="swiper-button-prev swiper-button-prev--arrow-left"
-            ></div>
-            <div
-              class="swiper-button-next swiper-button-next--arrow-right"
-            ></div>
+            <div class="slider-nav">
+              <div class="slider-bullets"></div>
+              <div
+                class="swiper-button-prev swiper-button-prev--arrow-left"
+              ></div>
+              <div
+                class="swiper-button-next swiper-button-next--arrow-right"
+              ></div>
+            </div>
           </div>
 
           <div class="firms-icons firms-icons--margin-bottom">
@@ -304,6 +306,13 @@
           </div>
 
           <div class="banner banner--top">
+            <div class="banner__img-box">
+              <img
+                src="./img/smart-tel.png"
+                alt="telephon"
+                class="banner__img"
+              />
+            </div>
             <p class="banner__text">
               Совершая покупки в OGstyle,
               <span class="banner__text--strong"
@@ -315,7 +324,7 @@
             </p>
           </div>
 
-          <div class="sale sale--margin-bottom">
+          <div class="sale sale--margin-bottom sale--margin-top">
             <h2 class="sale__title sale--top">Распродажа одежды и обуви</h2>
             <div class="sale__layout">
               <div class="sale__left--box">

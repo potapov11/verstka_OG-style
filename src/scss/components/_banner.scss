@@ -1,20 +1,60 @@
 .banner {
-  height: 400px;
+  aspect-ratio: 16/5;
   @include flex-v-center;
-  justify-content: end;
-  background-image: url("../../img/banner_orig.png");
+  justify-content: space-around;
+  background: linear-gradient(
+    225.19deg,
+    rgb(255, 243, 133) -12.518%,
+    rgba(255, 240, 186, 0.3) 137.381%
+  );
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 
   &--top {
-    margin-top: 160px;
+    margin-top: 100px;
   }
 
   &__text {
     font-size: 24px;
     color: $black;
     margin-right: 210px;
+    padding-left: 12px;
+    padding-right: 12px;
 
     &--strong {
       font-weight: 600;
+    }
+  }
+
+  @media (max-width: 1585px) {
+    &__text {
+      font-size: 20px;
+      color: $black;
+      margin-right: 21px;
+
+      &--strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .banner {
+    background-position-x: center;
+    background-position-y: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    flex-direction: column-reverse;
+    aspect-ratio: initial;
+    padding-top: 20px;
+
+    &__text {
+      margin-bottom: 12px;
     }
   }
 }

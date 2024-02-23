@@ -11,8 +11,6 @@
 /* добавляем стили для кнопок навигации */
 .swiper-button-prev--arrow-left,
 .swiper-button-next--arrow-right {
-  position: absolute;
-  top: 97% !important;
   width: 27px;
   height: 44px;
   margin-top: -22px;
@@ -24,13 +22,17 @@
 }
 
 .swiper-button-next--arrow-right {
-  left: 57% !important;
+  position: absolute;
+  right: -40px;
+  // left: 57% !important;
   background-image: url("../../img/icon-right.png");
 }
 
 .swiper-button-prev--arrow-left {
+  position: absolute;
+  left: -40px;
   background-image: url("../../img/icon-left.png");
-  left: 47% !important;
+  // left: 47% !important;
 }
 
 // .swiper-button-prev {
@@ -48,11 +50,23 @@
 
 /* добавляем стили для пагинации */
 .slider-bullets {
-  position: absolute;
+  // position: absolute;
   z-index: 2;
   bottom: 33px;
   left: 50% !important;
   width: 100%;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 53px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  bottom: 30px;
+  flex-direction: row;
+  margin-bottom: 0px;
+  z-index: 5;
 }
 
 .swiper-pagination-bullet {

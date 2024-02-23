@@ -20,6 +20,11 @@
     }
   }
 
+  &__mail-link,
+  &__tel-link {
+    display: none;
+  }
+
   &__watsap-link,
   &__tg-link {
     @include flex-all-center;
@@ -46,5 +51,24 @@
 
   &--margin-right {
     margin-right: 32px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .social-icons {
+    &__mail-link,
+    &__tel-link {
+      display: block;
+    }
+
+    &--margin-right {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .social-icons {
+    display: none;
   }
 }

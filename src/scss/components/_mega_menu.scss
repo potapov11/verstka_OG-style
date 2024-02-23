@@ -1,0 +1,46 @@
+.mega_menu {
+  display: none;
+  position: relative;
+  margin: 20px auto;
+  width: 60px;
+  height: 45px;
+  cursor: pointer;
+}
+.mega_menu span {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 6px;
+  transition: all 0.3s ease;
+}
+.mega_menu span:first-child {
+  top: 5px;
+}
+.mega_menu span:nth-child(2) {
+  top: 20px;
+}
+.mega_menu span:last-child {
+  top: 35px;
+}
+.rmSecond {
+  opacity: 0;
+}
+.centerizing {
+  top: 20px !important;
+  // background-color: red !important;
+}
+.rotF {
+  transform: rotate(45deg);
+}
+.rotL {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1000px) {
+  .mega_menu {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+  }
+}

@@ -37,3 +37,21 @@
     border-radius: 8px;
   }
 }
+
+@media (max-width: 600px) {
+  .goods-card {
+    &__name,
+    &__img {
+      text-align: center;
+    }
+
+    &__img-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__prices {
+      justify-content: center;
+    }
+  }
+}
