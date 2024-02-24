@@ -84,7 +84,7 @@
     height: 100%;
     margin-top: 20px;
     background-image: url("../../img/sale-img/hoodies.png");
-    background-size: cover;
+    background-size: 100%;
     background-position-x: right;
     background-repeat: no-repeat;
 
@@ -96,13 +96,14 @@
     position: relative;
     color: $black;
     font-style: normal;
+    overflow: hidden;
 
     &:hover {
       .sale__hoodies,
       .sale__boot,
       .sale__pants,
       .sale__t-shirts {
-        background-size: 150%;
+        transform: scale(1.2);
       }
     }
 
