@@ -29,3 +29,25 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 1000px) {
+  .coockie {
+    font-size: 12px;
+
+    &__btn {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .coockie {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__btn {
+      padding: 10px;
+    }
+  }
+}

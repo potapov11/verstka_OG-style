@@ -1,11 +1,13 @@
 .form-box {
   @include flex-h-center;
-  padding: 0.1px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 485px;
   background-image: url("../../img/form-bckg.png");
   background-repeat: no-repeat;
   font-style: normal;
-  line-height: 110%; /* 19.8px */
+  line-height: 110%;
+  border-radius: 10px; /* 19.8px */
 
   &__center--margin-top {
     margin-top: 100px;
@@ -123,5 +125,26 @@
     // border-color: #00b50e;
     background-image: url("../../img/check-box-checked.png");
     background-size: contain;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form-box__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-box {
+    height: 410px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__center--margin-top {
+      margin-top: 40px;
+    }
   }
 }

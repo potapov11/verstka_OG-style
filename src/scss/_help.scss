@@ -12,6 +12,10 @@ body {
   font-family: $font-main;
 }
 
+.show {
+  display: block !important;
+}
+
 .hide {
   visibility: hidden;
 }
